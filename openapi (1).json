@@ -44,7 +44,7 @@
         },
         "responses": {
           "201": {
-            "description": "Proyecto creado exitosamente",
+            "description": "Proyecto creado",
             "content": {
               "application/json": {
                 "schema": {
@@ -58,7 +58,7 @@
     },
     "/projects/{id}": {
       "get": {
-        "summary": "Obtener un proyecto por ID",
+        "summary": "Obtener un proyecto por su ID",
         "parameters": [
           {
             "in": "path",
@@ -72,7 +72,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Detalles del proyecto solicitado",
+            "description": "Detalles del proyecto",
             "content": {
               "application/json": {
                 "schema": {
@@ -87,7 +87,7 @@
         }
       },
       "put": {
-        "summary": "Actualizar un proyecto existente",
+        "summary": "Actualizar un proyecto",
         "parameters": [
           {
             "in": "path",
@@ -111,7 +111,7 @@
         },
         "responses": {
           "200": {
-            "description": "Proyecto actualizado exitosamente",
+            "description": "Proyecto actualizado",
             "content": {
               "application/json": {
                 "schema": {
@@ -126,7 +126,7 @@
         }
       },
       "delete": {
-        "summary": "Eliminar un proyecto existente",
+        "summary": "Eliminar un proyecto",
         "parameters": [
           {
             "in": "path",
@@ -140,7 +140,7 @@
         ],
         "responses": {
           "204": {
-            "description": "Proyecto eliminado exitosamente"
+            "description": "Proyecto eliminado"
           },
           "404": {
             "description": "Proyecto no encontrado"
